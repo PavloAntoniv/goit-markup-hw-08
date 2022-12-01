@@ -1,0 +1,30 @@
+.studio-logo {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--accent-color);
+}
+.footer-logo__studio {
+    color: var(--white-color);
+}
+.webstudio-logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-right: 93px;
+
+    color: var(--background-color);
+    display: block;
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .webstudio-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

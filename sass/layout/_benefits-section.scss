@@ -1,0 +1,44 @@
+.main-section {
+    text-align: center;
+}
+
+.benefits-list {
+    width: 270px;
+}
+
+.benefits-box {
+    display: flex;
+    height: 248px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.benefits-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefits-text {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--paragraf-color);
+    text-align: left;
+}
+
+.benefits-box__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-teams-color);
+}
+
+.benefits-icon {
+    width: 70px;
+    height: 70px;
+}

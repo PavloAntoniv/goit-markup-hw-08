@@ -1,0 +1,193 @@
+.footer {
+    background-color: var(--background-title-color);
+    margin-top: 0;
+    padding: 60px 0;
+}
+
+.contacts-footer {
+    display: block;
+}
+.footer-adres {
+    font-style: normal;
+    color: var(--white-color);
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-logo__studio {
+    color: var(--white-color);
+}
+
+.footer-contacts__link {
+    text-decoration: none;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
+    color: var(--background-color);
+}
+
+.footer-email {
+    display: block;
+    margin-bottom: 9px;
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-tel {
+    display: block;
+    margin: 0;
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-all {
+    min-height: 38px;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 6px 22px;
+    color: var(--primary-text-color);
+    background: var(--background-teams-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-property: background-color, color, box-shadow;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-all:hover,
+.button-all:focus {
+    background-color: var(--background-color);
+    color: var(--white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.footer-link__social {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-social__title {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-social__list {
+    display: flex;
+    gap: 10px;
+    height: 80px;
+}
+
+.footer-social__item {
+    display: inline-block;
+    align-items: center;
+}
+
+.footer-social__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+    border-radius: 50%;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+    transition-property: var(--background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+    background-color: var(--background-color);
+    color: var(--white-color);
+}
+
+.footer-box_first {
+    min-width: 231px;
+}
+
+/* ---form subscribe footer--- */
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.subscribe-input {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    padding: 16px;
+    padding-right: 0;
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-title-color);
+}
+
+.subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87px;
+    color: var(--title-text-color);
+    background: var(--background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: hidden;
+    cursor: pointer;
+
+    text-align: center;
+    transition-property: backround-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background: var(--title-text-color);
+    color: var(--background-color);
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+}
