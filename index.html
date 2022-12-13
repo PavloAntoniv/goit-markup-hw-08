@@ -55,7 +55,54 @@
               </li>
               <li><a href="./index.html" class="contacts">Контакти</a></li>
             </ul>
+            <!-- menu -->
+            <button data-menu-button type="button" class="mobil-menu__button">
+              <svg width="40" height="40" aria-label="мобільне меню">
+                <use
+                  class="mobile-icon__crose"
+                  href="./images/spryte.svg#icon-icon-close-mobile"
+                ></use>
+                <use
+                  class="mobile-icon__menu"
+                  href="./images/spryte.svg#icon-menu_mobile"
+                ></use>
+              </svg>
+            </button>
+            <div class="menu-mobile" id="menu-mobile" data-menu>
+              <ul class="header-menu__mobile">
+                <li class="studio-after">
+                  <a href="./index.html" class="studio car-studio">Студія</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="portfolio-studio"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li><a href="./index.html" class="contacts">Контакти</a></li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="contact-link">
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="contact-link">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
           </nav>
+
+          <!-- kontakts -->
 
           <ul class="header-contacts__link">
             <li class="mail">
@@ -200,18 +247,22 @@
           </ul>
         </div>
       </section>
-
+      <!-- Team section -->
       <section class="team-section">
         <div class="container">
           <h2 class="sections-title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item">
-              <img
-                src="./images/igor.jpg"
-                alt="Ігор дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor1x.jpg 1x, ./images/igor2x.jpg 2x"
+                  media="(max-width:480px)"
+                  type="image/jpg" />
+                <source />
+
+                <img src="./images/igor.jpg" alt="Ігор дем'яненко"
+              /></picture>
+
               <div class="team-section__title">
                 <h3 class="team-section__employee">Ігор Дем'яненко</h3>
                 <p class="team-section__position" lang="en">Product Designer</p>
@@ -249,12 +300,17 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                src="./images/olga.jpg"
-                alt="ольга рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/olha1x.jpg 1x, ./images/olha2x.jpg 2x"
+                  media="(max-width:480px)"
+                  type="image/jpg"
+                />
+                <source />
+
+                <img src="./images/olga.jpg" alt="ольга рєпіна" />
+              </picture>
+
               <div class="team-section__title">
                 <h3 class="team-section__employee">Ольга Рєпіна</h3>
                 <p class="team-section__position" lang="en">
@@ -294,12 +350,16 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                src="./images/mykola.jpg"
-                alt="микола тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/mykola1x.jpg 1x, ./images/mykola2x.jpg 2x"
+                  media="(max-width:480px)"
+                  type="image/jpg" />
+                <source />
+
+                <img src="./images/mykola.jpg" alt="микола тарасов"
+              /></picture>
+
               <div class="team-section__title">
                 <h3 class="team-section__employee">Микола Тарасов</h3>
                 <p class="team-section__position" lang="en">Marketing</p>
@@ -337,12 +397,19 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                src="./images/mykhailo.jpg"
-                alt="михайло єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo2x.jpg 1x,
+                    ./images/mykhailo2x.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpg" />
+                <source />
+
+                <img src="./images/mykhailo.jpg" alt="михайло єрмаков"
+              /></picture>
+
               <div class="team-section__title">
                 <h3 class="team-section__employee">Михайло Єрмаков</h3>
                 <p class="team-section__position" lang="en">UI Designer</p>
@@ -381,6 +448,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- company -->
       <section class="section">
         <div class="container">
           <h2 class="sections-title company-section__title">
@@ -433,6 +502,7 @@
         </div>
       </section>
     </main>
+
     <!-----------------footer----------------->
     <footer class="footer">
       <div class="container footer-link__social">
@@ -441,24 +511,28 @@
             Web<span class="footer-logo__studio">Studio</span></a
           >
 
-          <address class="footer-adres">
-            м. Київ, пр-т Лесі Українки, 26
-          </address>
+          <div class="mobile-adres">
+            <address class="footer-adres">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
 
-          <ul>
-            <li class="footer-email">
-              <a href="mailto:info@devstudio.com" class="footer-contacts__link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-tel">
-              <a href="tel:+380961111111" class="footer-contacts__link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+            <ul>
+              <li class="footer-email">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer-contacts__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-tel">
+                <a href="tel:+380961111111" class="footer-contacts__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="">
+        <div class="footer-mobile__link">
           <h2 class="footer-social__title">ПРИЄДНУЙТЕСЬ</h2>
           <ul class="footer-social__list">
             <li class="footer-social__item">
@@ -491,6 +565,7 @@
             </li>
           </ul>
         </div>
+        -->
 
         <!----------------- form subscribe  ----------------->
         <div class="form-footer">
@@ -515,6 +590,7 @@
         </div>
       </div>
     </footer>
+    -->
 
     <!--------------------- modal---------------- -->
     <div class="backdrop is-hidden" data-modal>
@@ -533,6 +609,7 @@
             />
           </svg>
         </button>
+        -->
         <!------------------  form modal-------------------->
         <form class="form-modal">
           <div class="form-field">
@@ -606,6 +683,8 @@
         </form>
       </div>
     </div>
+    -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

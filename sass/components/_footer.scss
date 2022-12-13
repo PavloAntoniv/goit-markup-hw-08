@@ -2,7 +2,14 @@
     background-color: var(--background-title-color);
     margin-top: 0;
     padding: 60px 0;
+
+@media screen and(max-width: $mobile) {
+     display: flex;
+        flex-direction: column;
+    }
 }
+
+
 
 .contacts-footer {
     display: block;
@@ -77,6 +84,15 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+
+    @media screen and(max-width: $mobile) {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
 .footer-social__title {
@@ -87,6 +103,27 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @media screen and(max-width: $mobile) {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+.mobile-adres{
+    
+    @media screen and(max-width: $mobile) {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+    
 }
 
 .footer-social__list {
@@ -129,9 +166,46 @@
 
 .footer-box_first {
     min-width: 231px;
+
+    @media screen and(max-width: $mobile) {
+           display: flex;
+            flex-direction: column;
+    
+        }
+}
+
+.footer-mobile__link{
+    @media screen and(max-width: $mobile) {
+            display: flex;
+flex-direction: column;
+    
+        }
+}
+
+.form-footer{
+    @media screen and(max-width: $mobile) {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
 /* ---form subscribe footer--- */
+
+
+.subscribe-form{
+
+
+    @media screen and(max-width: $mobile) {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+}
 
 .subscribe-title {
     font-weight: 700;
@@ -154,6 +228,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--background-title-color);
+
+
+    @media screen and(max-width: $mobile) {
+    
+           margin-bottom: 20px;
+        }
 }
 
 .subscribe-button {

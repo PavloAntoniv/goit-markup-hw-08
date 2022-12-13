@@ -1,5 +1,7 @@
 .section {
     padding: 94px 0;
+
+    
 }
 
 
@@ -17,22 +19,49 @@
 }
 
 .main-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--title-text-color);
 
-    width: 696px;
-    margin: 0 auto;
-    margin-top: 200px;
-    margin-bottom: 30px;
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+    
+        width: 696px;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 30px;
+
+@media screen and(max-width: $mobile) {
+
+    width: 360px;
+        height: 84px;
+        margin-bottom: 30px;
+    
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        /* or 162% */
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+
+    }
+
+     
+    
 }
 
 .main-section {
-    max-width: 1600px;
+max-width: 1600px;
     height: 600px;
+    padding: 200px 0;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +73,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+   
+
+         
+}
+
+.overlay{
+
+
+    @media screen and(max-width: $mobile) {
+        width: 360px;
+            height: 164px;
+            margin: 40px 60px;
+        
+    }
 }
 
 .sections-title {
@@ -52,4 +96,10 @@
     color: var(--primary-text-color);
     margin-bottom: 50px;
     text-align: center;
+
+
+    @media screen and(max-width: $mobile) {
+          margin-top: 20px;
+    
+        }
 }

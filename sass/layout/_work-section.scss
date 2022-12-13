@@ -1,5 +1,20 @@
 .work-section {
     padding-top: 0;
+
+@media screen and(min-width: $mobile) {
+    display: none;
+
+}
+
+@media screen and(min-width: $tablet) {
+    display: block;
+
+}
+@media screen and(min-width: $descktop) {
+    display: block;
+
+}
+
 }
 .work-section__item {
     position: relative;

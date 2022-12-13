@@ -2,6 +2,16 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+   
+         @media screen and(max-width: $mobile) {
+                display: flex;
+                 flex-wrap: wrap;
+                 
+          }
+           
+    
+        
 }
 
 .company-section__title {
@@ -17,6 +27,15 @@
 .company-section__list {
     width: 170px;
     height: 92px;
+
+
+@media screen and(max-width: $mobile) {
+  
+ width: 210px;
+   height: 92px;
+}
+
+
 }
 
 .company-section__link {
@@ -32,6 +51,12 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(max-width: $mobile) {
+            
+            // width: 210px;
+            // height: 92px;
+        }
 }
 
 .company-section__link:hover,
