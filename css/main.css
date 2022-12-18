@@ -502,6 +502,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1779,6 +1780,13 @@ textarea:focus {
   position: relative;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .ul-projects-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .projects-title {
   font-size: 18px;
@@ -1843,6 +1851,14 @@ textarea:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .projects-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 480px) {

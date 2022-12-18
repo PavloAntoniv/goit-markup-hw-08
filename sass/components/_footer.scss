@@ -192,6 +192,7 @@
   @media screen and(max-width: $mobile) {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
   }
   @media screen and(max-width: $descktop) {
     text-align: center;
