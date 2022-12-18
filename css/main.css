@@ -1186,7 +1186,7 @@ textarea:focus {
 }
 @media screen and (max-width: 480px) {
   .company-section__list {
-    width: calc((100% - 30px) / 3);
+    width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
