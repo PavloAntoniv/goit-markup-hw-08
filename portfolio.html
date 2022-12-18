@@ -43,8 +43,74 @@
               </li>
               <li><a href="./index.html" class="contacts">Контакти</a></li>
             </ul>
-          </nav>
 
+            <!-- menu -->
+
+            <button data-menu-button type="button" class="mobil-menu__button">
+              <svg width="24" height="16" aria-label="мобільне меню">
+                <use
+                  class="mobile-icon__crose"
+                  href="./images/spryte.svg#icon-icon-close-mobile"
+                ></use>
+                <use
+                  class="mobile-icon__menu"
+                  href="./images/spryte.svg#icon-menu_mobile"
+                ></use>
+              </svg>
+            </button>
+            <div class="menu-mobile" id="menu-mobile" data-menu>
+              <ul class="header-menu__mobile">
+                <li class="studio-mobile">
+                  <a href="./index.html" class="mobile-link">Студія</a>
+                </li>
+                <li class="studio-mobile">
+                  <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+                </li>
+                <li class="studio-mobile">
+                  <a href="./index.html" class="mobile-link">Контакти</a>
+                </li>
+              </ul>
+              <div class="mobile-contakt">
+                <ul>
+                  <li>
+                    <a href="tel:+380961111111" class="mail-mobile">
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:info@devstudio.com" class="tel-mobile">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="nav-mobile__list--social">
+                  <li class="nav-mobile__link-social">
+                    <a href="#" class="nav-mobile__link-social"
+                      >Instagram <span class="line-mobile__menu"></span
+                    ></a>
+
+                    <!-- <svg class="line-mobile__menu">
+                      <use href="./images/Line1.svg"></use>
+                    </svg> -->
+                  </li>
+                  <li class="nav-mobile__link-social">
+                    <a href="#" class="nav-mobile__link-social"
+                      >Twitter <span class="line-mobile__menu"></span
+                    ></a>
+                  </li>
+                  <li class="nav-mobile__link-social">
+                    <a href="#" class="nav-mobile__link-social"
+                      >Facebook <span class="line-mobile__menu"></span
+                    ></a>
+                  </li>
+                  <li class="nav-mobile__link-social">
+                    <a href="#" class="nav-mobile__link-social">Linkedin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
           <ul class="header-contacts__link">
             <li class="mail">
               <a href="mailto:info@devstudio.com" class="contact-link">
@@ -365,5 +431,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,27 +1,35 @@
 body {
-    background-color: var(--white-color);
-    color: var(--primary-text-color);
-    font-family: "Roboto";
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
+
+.body.modal-open {
+  overflow: hidden;
+
+  @media screen and(min-width:$tablet) {
+    overflow: hidden;
+  }
+}
+
 .container {
-    // width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
+  // width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
 
-    @media screen and(min-width: $mobile ) {
-            width: 480px;
-            background-color: var(background-teams-color);
-        }
-    
-        @media screen and(min-width: $tablet) {
-            width: 768px;
-        }
-    
-        @media screen and(min-width: $descktop) {
-            width: 1200px;
-        }
+  @media screen and(min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and(min-width: $descktop) {
+    width: 1200px;
+  }
+
+  @media screen and(max-width: $mobile ) {
+    width: 480px;
+    background-color: var(background-teams-color);
+  }
 }
-

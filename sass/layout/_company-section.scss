@@ -5,10 +5,18 @@
 
    
          @media screen and(max-width: $mobile) {
+           
                 display: flex;
                  flex-wrap: wrap;
                  
           }
+
+                        @media screen and(max-width: $tablet) {
+                            display: flex;
+                            flex-wrap: wrap;
+                           gap: 30px;
+            
+                        }
            
     
         
@@ -25,16 +33,21 @@
 }
 
 .company-section__list {
-    width: 170px;
+    
     height: 92px;
 
 
 @media screen and(max-width: $mobile) {
   
- width: 210px;
-   height: 92px;
+width: calc((100% - 30px)/3);
+   
 }
 
+  @media screen and(min-width: $tablet) {
+    width: calc((100% - 60px)/3);
+        
+
+  }
 
 }
 

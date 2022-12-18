@@ -24,7 +24,17 @@
 @media screen and(max-width: $mobile) {
     
         justify-content: center;
+
+
     }
+
+
+         @media screen and(min-width: $tablet) {
+             display: flex;
+            flex-wrap: wrap;
+             gap: 30px;
+    
+         }
  @media screen and(min-width: $descktop) {
     display: flex;
         gap: 30px;
