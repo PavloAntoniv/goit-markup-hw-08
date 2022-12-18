@@ -10,6 +10,7 @@
   transition-timing-function: ease;
 
   @media screen and(max-width:$mobile) {
+    min-width: 450px;
     overflow-y: scroll;
     margin: 0 auto;
   }
@@ -260,6 +261,10 @@ textarea:focus {
   color: var(--paragraf-color);
   margin-bottom: 30px;
   justify-content: center;
+
+  @media screen and(max-width:$mobile) {
+    font-size: 12px;
+  }
 }
 
 .form-accept__policy {

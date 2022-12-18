@@ -23,7 +23,7 @@
     display: none;
   }
 
-  @media screen and(max-width:$descktop) {
+  @media screen and(min-width:$descktop) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -342,8 +342,11 @@
 .menu-mobile {
   display: none;
   position: absolute;
+
   width: 100%;
+  height: 100%;
   top: 100%;
+
   left: 0;
   font-size: 15px;
 

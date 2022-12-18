@@ -8,10 +8,6 @@ body {
 
 .body.modal-open {
   overflow: hidden;
-
-  @media screen and(min-width:$tablet) {
-    overflow: hidden;
-  }
 }
 
 .container {
