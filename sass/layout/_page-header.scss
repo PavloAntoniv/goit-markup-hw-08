@@ -8,13 +8,11 @@
   }
 }
 .navi-container {
+  display: flex;
+  gap: 50px;
+
   @media screen and(max-width: $mobile) {
     display: none;
-  }
-
-  @media screen and(min-width: $tablet) {
-    display: flex;
-    gap: 50px;
   }
 }
 
@@ -39,15 +37,8 @@
 }
 
 .header-menu__box {
-  @media screen and(min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media screen and(min-width: $descktop) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 
   @media screen and(max-width:$mobile) {
     align-items: center;
@@ -73,16 +64,16 @@
 }
 
 .mobil-menu__button {
-  @media screen and(min-width:481px) {
-    display: none;
-  }
-
   display: inline-flex;
   margin: 0;
   padding: 0;
-
+  z-index: 1;
   border: none;
   background-color: transparent;
+
+  @media screen and(min-width:767px) {
+    display: none;
+  }
 }
 
 .mobil-menu__button .mobile-icon__crose {
@@ -91,6 +82,10 @@
 
 .mobil-menu__button.is-open .mobile-icon__crose {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .mobil-menu__button.is-open .mobile-icon__menu {
@@ -342,14 +337,11 @@
 .menu-mobile {
   display: none;
   position: absolute;
-
   width: 100%;
   height: 100%;
   top: 100%;
-
   left: 0;
   font-size: 15px;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
@@ -359,13 +351,22 @@
     width: 100%;
     min-height: 796px;
     background-color: var(--white-color);
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+
     transform: translateX(0);
   }
 }
 
 .studio-mobile {
   margin-bottom: 36px;
+}
+
+.studio-mobile:active {
+  @media screen and(max-width:$mobile) {
+    color: var(--background-color);
+  }
 }
 
 .mobile-link {
@@ -390,7 +391,7 @@
   line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--paragraf-color);
+  color: var(--background-color);
 }
 
 .mail-mobile {
@@ -398,7 +399,7 @@
   line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--background-color);
+  color: var(--paragraf-color);
 }
 
 .nav-mobile__list--social {

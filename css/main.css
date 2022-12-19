@@ -41,7 +41,7 @@ body {
   margin-left: auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 768px;
   }
@@ -98,7 +98,13 @@ img {
 }
 @media screen and (max-width: 768px) {
   .section {
+    width: 768px;
     padding: 60px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    width: 480px;
   }
 }
 
@@ -219,7 +225,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .sections-title {
-    width: 360px;
     margin-top: 20px;
   }
 }
@@ -397,7 +402,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -406,7 +410,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-social__item {
@@ -463,6 +469,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 60px;
   }
 }
 .box-footer__tablet {
@@ -502,6 +509,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 0;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1179,6 +1187,12 @@ textarea:focus {
   margin-bottom: 50px;
   color: var(--primary-text-color);
 }
+@media screen and (max-width: 480px) {
+  .company-section__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
 
 .company-section__list {
   height: 92px;
@@ -1188,7 +1202,7 @@ textarea:focus {
     width: 210px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .company-section__list {
     width: calc((100% - 60px) / 3);
   }
@@ -1240,17 +1254,15 @@ textarea:focus {
   }
 }
 
+.navi-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
 @media screen and (max-width: 480px) {
   .navi-container {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navi-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
   }
 }
 
@@ -1284,25 +1296,13 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-menu__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-menu__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.header-menu__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
   .header-menu__box {
@@ -1348,10 +1348,11 @@ textarea:focus {
   display: inline-flex;
   margin: 0;
   padding: 0;
+  z-index: 1;
   border: none;
   background-color: transparent;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 767px) {
   .mobil-menu__button {
     display: none;
   }
@@ -1363,6 +1364,10 @@ textarea:focus {
 
 .mobil-menu__button.is-open .mobile-icon__crose {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .mobil-menu__button.is-open .mobile-icon__menu {
@@ -1655,13 +1660,21 @@ textarea:focus {
   width: 100%;
   min-height: 796px;
   background-color: var(--white-color);
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
 .studio-mobile {
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 480px) {
+  .studio-mobile:active {
+    color: var(--background-color);
+  }
 }
 
 .mobile-link {
@@ -1692,7 +1705,7 @@ textarea:focus {
   line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--paragraf-color);
+  color: var(--background-color);
 }
 
 .mail-mobile {
@@ -1700,7 +1713,7 @@ textarea:focus {
   line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--background-color);
+  color: var(--paragraf-color);
 }
 
 .nav-mobile__list--social {

@@ -16,7 +16,7 @@ body {
   margin-left: auto;
   padding: 0 15px;
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(max-width: $tablet) {
     width: 768px;
   }
 

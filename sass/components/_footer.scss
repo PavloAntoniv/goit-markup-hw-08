@@ -117,14 +117,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
   }
 }
 
 .footer-social__list {
   display: flex;
   gap: 10px;
-  height: 80px;
+  justify-content: center;
 }
 
 .footer-social__item {
@@ -165,6 +164,7 @@
   @media screen and(max-width: $mobile) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   @media screen and(min-width:$tablet) {
@@ -193,6 +193,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    margin-bottom: 60px;
   }
   @media screen and(max-width: $descktop) {
     text-align: center;

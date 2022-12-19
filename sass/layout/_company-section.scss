@@ -23,6 +23,11 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: var(--primary-text-color);
+
+  @media screen and(max-width: $mobile) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .company-section__list {
@@ -32,7 +37,7 @@
     width: 210px;
   }
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(max-width: $tablet) {
     width: calc((100% - 60px) / 3);
   }
 }

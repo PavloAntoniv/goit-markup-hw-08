@@ -2,7 +2,12 @@
   padding: 94px 0;
 
   @media screen and(max-width:$tablet) {
+    width: 768px;
     padding: 60px 0;
+  }
+
+  @media screen and(max-width:$mobile) {
+    width: 480px;
   }
 }
 
@@ -148,7 +153,6 @@
   text-align: center;
 
   @media screen and(max-width: $mobile) {
-    width: 360px;
     margin-top: 20px;
   }
 
