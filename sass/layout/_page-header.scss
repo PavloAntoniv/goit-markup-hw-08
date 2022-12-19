@@ -105,27 +105,19 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and(max-width: $tablet) {
-  }
-
-  @media screen and(min-width: $descktop) {
-  }
 }
 
 .studio::after {
-  @media screen and(min-width: 767px) {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
 
-    background-color: var(--background-color);
-    border-radius: 2px;
-  }
+  background-color: var(--background-color);
+  border-radius: 2px;
 }
 
 .studio:hover,
@@ -363,12 +355,6 @@
   margin-bottom: 36px;
 }
 
-.studio-mobile:active {
-  @media screen and(max-width:$mobile) {
-    color: var(--background-color);
-  }
-}
-
 .mobile-link {
   font-weight: 500;
   font-size: 40px;
@@ -382,6 +368,10 @@
 }
 .mobile-link:hover,
 .mobile-link:focus {
+  color: var(--background-color);
+}
+
+.mobile-link:active {
   color: var(--background-color);
 }
 

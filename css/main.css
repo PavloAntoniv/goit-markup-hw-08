@@ -1391,18 +1391,17 @@ textarea:focus {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 767px) {
-  .studio::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--background-color);
-    border-radius: 2px;
-  }
+
+.studio::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--background-color);
+  border-radius: 2px;
 }
 
 .studio:hover,
@@ -1671,12 +1670,6 @@ textarea:focus {
   margin-bottom: 36px;
 }
 
-@media screen and (max-width: 480px) {
-  .studio-mobile:active {
-    color: var(--background-color);
-  }
-}
-
 .mobile-link {
   font-weight: 500;
   font-size: 40px;
@@ -1696,6 +1689,10 @@ textarea:focus {
 
 .mobile-link:hover,
 .mobile-link:focus {
+  color: var(--background-color);
+}
+
+.mobile-link:active {
   color: var(--background-color);
 }
 
