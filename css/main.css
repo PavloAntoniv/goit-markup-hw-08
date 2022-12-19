@@ -123,7 +123,6 @@ img {
   color: var(--title-text-color);
   width: 696px;
   margin: 0 auto;
-  margin-top: 200px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 480px) {
@@ -1260,7 +1259,7 @@ textarea:focus {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-contacts__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1864,7 +1863,6 @@ textarea:focus {
 @media screen and (min-width: 480px) {
   .team-section {
     background-color: var(--background-teams-color);
-    margin-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

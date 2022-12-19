@@ -23,7 +23,7 @@
     display: none;
   }
 
-  @media screen and(min-width:$descktop) {
+  @media screen and(min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
