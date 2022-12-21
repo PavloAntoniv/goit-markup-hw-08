@@ -104,7 +104,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .section {
-    width: 100vw;
+    width: 480px;
   }
 }
 
@@ -1165,9 +1165,11 @@ textarea:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-company {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1199,12 +1201,19 @@ textarea:focus {
 }
 @media screen and (max-width: 480px) {
   .company-section__list {
-    width: 210px;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .company-section__list {
     width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-section__list {
+    width: 170px;
+    height: 92px;
   }
 }
 
@@ -1234,6 +1243,12 @@ textarea:focus {
 @media screen and (min-width: 768px) {
   .company-section__link {
     width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-section__link {
+    width: 170px;
     height: 92px;
   }
 }
@@ -1267,7 +1282,7 @@ textarea:focus {
   display: flex;
   gap: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navi-container {
     display: none;
   }

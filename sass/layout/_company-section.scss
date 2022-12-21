@@ -6,9 +6,11 @@
   @media screen and(max-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 20px;
   }
 
-  @media screen and(max-width: $tablet) {
+  @media screen and(min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -34,11 +36,16 @@
   height: 92px;
 
   @media screen and(max-width: $mobile) {
-    width: 210px;
+    align-content: center;
   }
 
-  @media screen and(max-width: $tablet) {
+  @media screen and(min-width: $tablet) {
     width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and(min-width: $descktop) {
+    width: 170px;
+    height: 92px;
   }
 }
 
@@ -63,6 +70,11 @@
 
   @media screen and(min-width:$tablet) {
     width: 226px;
+    height: 92px;
+  }
+
+  @media screen and(min-width: $descktop) {
+    width: 170px;
     height: 92px;
   }
 }
