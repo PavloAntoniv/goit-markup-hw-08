@@ -11,13 +11,13 @@
   display: flex;
   gap: 50px;
 
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 768px) {
     display: none;
   }
 }
 
 .header-contacts__link {
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 768px) {
     display: none;
   }
 
@@ -77,6 +77,12 @@
   }
 }
 
+.mobil-menu-open__icon {
+  @media screen and(min-width:767px) {
+    display: none;
+  }
+}
+
 .mobil-menu__button .mobile-icon__crose {
   display: none;
 }
@@ -91,8 +97,8 @@
 
 .close-icon {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10;
+  left: 15;
 }
 
 .studio {

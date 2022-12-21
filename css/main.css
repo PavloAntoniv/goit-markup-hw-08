@@ -104,7 +104,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .section {
-    width: 480px;
+    width: 100vw;
   }
 }
 
@@ -1267,13 +1267,13 @@ textarea:focus {
   display: flex;
   gap: 50px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .navi-container {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header-contacts__link {
     display: none;
   }
@@ -1365,6 +1365,12 @@ textarea:focus {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .mobil-menu-open__icon {
+    display: none;
+  }
+}
+
 .mobil-menu__button .mobile-icon__crose {
   display: none;
 }
@@ -1379,8 +1385,8 @@ textarea:focus {
 
 .close-icon {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10;
+  left: 15;
 }
 
 .studio {
@@ -2057,15 +2063,7 @@ textarea:focus {
   border-radius: 0px 0px 4px 4px;
 }
 
-.work-section {
-  padding-top: 0;
-}
-@media screen and (max-width: 480px) {
-  .work-section {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .work-section {
     display: none;
   }
@@ -2073,6 +2071,7 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .work-section {
     display: block;
+    padding-top: 0;
   }
 }
 
