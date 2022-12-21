@@ -1355,29 +1355,12 @@ textarea:focus {
   display: inline-flex;
   margin: 0;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
   border: none;
   background-color: transparent;
 }
 @media screen and (min-width: 767px) {
   .mobil-menu__button {
-    display: none;
-  }
-}
-
-.mobil-close__button {
-  display: block;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 20px;
-  right: 35px;
-}
-@media screen and (min-width: 767px) {
-  .mobil-close__button {
     display: none;
   }
 }
@@ -1392,6 +1375,12 @@ textarea:focus {
 
 .mobil-menu__button.is-open .mobile-icon__menu {
   display: none;
+}
+
+.close-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .studio {
