@@ -47,26 +47,30 @@
             <!-- menu -->
 
             <button data-menu-button type="button" class="mobil-menu__button">
-              <svg width="24" height="16" aria-label="мобільне меню">
+              <svg
+                width="24"
+                height="16"
+                aria-label="мобільне меню"
+                class="mobil-menu-open__icon"
+              >
                 <use
                   class="mobile-icon__menu"
                   href="./images/spryte.svg#icon-menu_mobile"
                 ></use>
               </svg>
+              <svg
+                width="24"
+                height="16"
+                aria-label="мобільне меню"
+                class="close-icon"
+              >
+                <use
+                  class="mobile-icon__crose"
+                  href="./images/spryte.svg#icon-icon-close-mobile"
+                ></use>
+              </svg>
             </button>
             <div class="menu-mobile" id="menu-mobile" data-menu>
-              <button
-                data-menu-button
-                type="button"
-                class="mobil-close__button"
-              >
-                <svg width="24" height="16" aria-label="мобільне меню">
-                  <use
-                    class="mobile-icon__crose"
-                    href="./images/spryte.svg#icon-icon-close-mobile"
-                  ></use>
-                </svg>
-              </button>
               <ul class="header-menu__mobile">
                 <li class="studio-mobile">
                   <a href="./index.html" class="mobile-link">Студія</a>
@@ -361,68 +365,77 @@
       </section>
     </main>
 
+    <!-- footer -->
+
     <footer class="footer">
       <div class="container footer-link__social">
-        <div class="footer-box_first">
-          <a href="./index.html" class="webstudio-logo">
-            Web<span class="footer-logo__studio">Studio</span></a
-          >
+        <div class="box-footer__tablet">
+          <div class="footer-box_first">
+            <a href="./index.html" class="webstudio-logo">
+              Web<span class="footer-logo__studio">Studio</span></a
+            >
 
-          <address class="footer-adres">
-            м. Київ, пр-т Лесі Українки, 26
-          </address>
+            <div class="mobile-adres">
+              <address class="footer-adres">
+                м. Київ, пр-т Лесі Українки, 26
+              </address>
 
-          <ul>
-            <li class="footer-email">
-              <a href="mailto:info@devstudio.com" class="footer-contacts__link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-tel">
-              <a href="tel:+380961111111" class="footer-contacts__link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+              <ul>
+                <li class="footer-email">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-tel">
+                  <a href="tel:+380961111111" class="footer-contacts__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-mobile__link">
+            <h2 class="footer-social__title">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon">
+                    <use href="./images/spryte.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon">
+                    <use href="./images/spryte.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon">
+                    <use href="./images/spryte.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon">
+                    <use href="./images/spryte.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-contener">
-          <h2 class="footer-social__title">ПРИЄДНУЙТЕСЬ</h2>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon">
-                  <use href="./images/spryte.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon">
-                  <use href="./images/spryte.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon">
-                  <use href="./images/spryte.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon">
-                  <use href="./images/spryte.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <!----------------- form subscribe  ----------------->
         <div class="form-footer">
           <h2 class="subscribe-title">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
-            <label class="lable-subscribe" for="subscribe"></label>
+            <label class="" for="subscribe"></label>
 
             <input
               class="subscribe-input"
