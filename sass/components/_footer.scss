@@ -3,7 +3,7 @@
   margin-top: 0;
   padding: 60px 0;
 
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 767px) {
     width: 480px;
     display: flex;
     flex-direction: column;
