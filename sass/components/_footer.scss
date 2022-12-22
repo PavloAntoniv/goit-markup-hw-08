@@ -4,7 +4,7 @@
   padding: 60px 0;
 
   @media screen and(max-width: 767px) {
-    width: 480px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -80,7 +80,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .footer-link__social {
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +112,7 @@
 }
 
 .mobile-adres {
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,19 +212,19 @@
 /* ---form subscribe footer--- */
 
 .subscribe-form {
+  @media screen and(max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and(max-width: $descktop) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-  }
-
-  @media screen and(max-width: $mobile) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -257,7 +257,7 @@
   border-radius: 4px;
   background-color: var(--background-title-color);
 
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: 767px) {
     margin-bottom: 20px;
     width: 450px;
   }
