@@ -5,6 +5,10 @@
   justify-content: center;
   gap: 8px;
   padding: 0 auto;
+
+  @media screen and(max-width:767px) {
+    flex-wrap: wrap;
+  }
 }
 
 .link-projects-box {
@@ -46,6 +50,7 @@
   @media screen and(min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
 }
 

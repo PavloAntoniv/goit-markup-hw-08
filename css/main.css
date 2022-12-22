@@ -1831,6 +1831,12 @@ textarea:focus {
   gap: 8px;
   padding: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .projects-button__style {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .link-projects-box {
   display: block;
@@ -1885,6 +1891,7 @@ textarea:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
