@@ -176,12 +176,39 @@
             <li class="projects-box">
               <a href="#" class="link-projects-box">
                 <div class="overlay-tekhno">
-                  <img
-                    src="./images/tekhnokriak.jpg"
-                    alt="технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tekhnokriak-desc1x.jpg 1x,
+                        ./images/tekhnokriak-desc2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source />
+
+                    <source
+                      srcset="
+                        ./images/tekhnokriak-tab1x.jpg 1x,
+                        ./images/tekhnokriak-tab2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source />
+
+                    <source
+                      srcset="
+                        ./tekhnokriak-mob1x.jpg 1x,
+                        ./tekhnokriak-mob2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <source />
+
+                    <img src="./images/tekhnokriak.jpg" alt="технокряк" />
+                  </picture>
 
                   <div class="overlay-projects-action">
                     <p class="articl-projects">
