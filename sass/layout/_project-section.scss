@@ -33,6 +33,7 @@
 
   @media screen and(min-width:$tablet) {
     width: 100%;
+    gap: 30px;
   }
 
   @media screen and(min-width:$descktop) {
@@ -59,6 +60,7 @@
   }
 
   @media screen and(min-width:$tablet) {
+    gap: 15px;
   }
 }
 

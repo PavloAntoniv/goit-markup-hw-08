@@ -1869,6 +1869,7 @@ textarea:focus {
 @media screen and (min-width: 768px) {
   .link-projects-box {
     width: 100%;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1901,6 +1902,12 @@ textarea:focus {
             justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .ul-projects-list {
+    gap: 15px;
+  }
+}
+
 .projects-title {
   font-size: 18px;
   line-height: 2;
