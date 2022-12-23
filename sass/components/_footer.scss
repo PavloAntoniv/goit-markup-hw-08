@@ -212,19 +212,21 @@
 /* ---form subscribe footer--- */
 
 .subscribe-form {
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width:767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  @media screen and(max-width: $descktop) {
+  @media screen and(max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+  @media screen and(min-width: 1200px) {
   }
 }
 
@@ -257,15 +259,28 @@
   border-radius: 4px;
   background-color: var(--background-title-color);
 
+  @media screen and(max-width:479px) {
+    width: 100%;
+  }
+
   @media screen and(max-width: 767px) {
     margin-bottom: 20px;
     width: 450px;
   }
-  @media screen and(max-width: $descktop) {
-  }
 
-  @media screen and(max-width:479px) {
-    width: 100%;
+  @media screen and(min-width:$descktop) {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    padding: 16px;
+    padding-right: 0;
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-title-color);
   }
 }
 
