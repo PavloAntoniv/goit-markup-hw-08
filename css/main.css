@@ -734,7 +734,7 @@ img {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     min-width: 450px;
     overflow-y: scroll;
@@ -832,6 +832,11 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  textarea {
+    width: 200px;
+  }
+}
 
 .form-modal {
   width: 528px;
@@ -853,6 +858,13 @@ textarea {
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 479px) {
+  .form-title {
+    margin-left: 0;
+    font-size: 10px;
+    text-align: left;
+  }
 }
 
 .form-field {
@@ -880,19 +892,42 @@ textarea {
   display: inline;
 }
 
-.form-input__name {
-  width: 100%;
-  height: 40px;
-  padding-left: 30px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  -webkit-transition-property: var(--background-color);
-  transition-property: var(--background-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
+@media screen and (max-width: 767px) {
+  .form-input__name {
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    -webkit-transition-property: var(--background-color);
+    transition-property: var(--background-color);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-input__name {
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    -webkit-transition-property: var(--background-color);
+    transition-property: var(--background-color);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form-input__name {
+    width: 200px;
+  }
 }
 
 .form-input__name:focus {
@@ -974,6 +1009,11 @@ textarea:focus {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form-button {
+    margin-left: 0;
+  }
 }
 
 .form-button:hover,
@@ -1057,6 +1097,11 @@ textarea:focus {
 .form-accept__policy {
   margin-left: 2px;
   color: var(--background-color);
+}
+@media screen and (max-width: 479px) {
+  .form-accept__policy {
+    display: block;
+  }
 }
 
 .main-section {
