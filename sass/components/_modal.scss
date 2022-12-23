@@ -44,8 +44,12 @@
     width: 450px;
   }
 
-  @media screen and(max-width:$descktop) {
+  @media screen and(min-width:$descktop) {
     min-height: 609px;
+  }
+
+  @media screen and(max-width:479px) {
+    width: 100%;
   }
 }
 
@@ -65,6 +69,10 @@
   transition-property: var(--background-color);
   transition-duration: 250ms;
   transition-timing-function: scale(0.4, 0, 0.2, 1);
+
+  @media screen and(max-width:479px) {
+    right: 160px;
+  }
 }
 
 .modal-close:hover {
@@ -102,6 +110,10 @@ textarea {
 
   @media screen and(max-width:$mobile) {
     width: 450px;
+  }
+  @media screen and(max-width:479px) {
+    padding-left: 20px;
+    padding-bottom: 80px;
   }
 }
 
@@ -257,6 +269,10 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   line-height: 24px;
+
+  @media screen and(max-width:479px) {
+    line-height: 12px;
+  }
 }
 
 .form-checkbox__icon {
@@ -269,6 +285,12 @@ textarea:focus {
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
   fill: currentColor;
+
+  @media screen and(max-width:479px) {
+    width: 12px;
+    height: 11px;
+    margin-right: 1px;
+  }
 }
 
 .form-checkbox:checked + .form-checkbox__icon {
@@ -295,6 +317,11 @@ textarea:focus {
 
   @media screen and(max-width:$mobile) {
     font-size: 12px;
+
+    @media screen and(max-width:479px) {
+      font-size: 10px;
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -303,6 +330,7 @@ textarea:focus {
   color: var(--background-color);
 
   @media screen and(max-width:479px) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

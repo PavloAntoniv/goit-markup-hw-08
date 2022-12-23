@@ -774,9 +774,14 @@ img {
     width: 450px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal {
     min-height: 609px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
   }
 }
 
@@ -805,6 +810,11 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: scale(0.4, 0, 0.2, 1);
           transition-timing-function: scale(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .modal-close {
+    right: 160px;
+  }
 }
 
 .modal-close:hover {
@@ -847,6 +857,12 @@ textarea {
 @media screen and (max-width: 480px) {
   .form-modal {
     width: 450px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form-modal {
+    padding-left: 20px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1047,6 +1063,11 @@ textarea:focus {
           justify-content: center;
   line-height: 24px;
 }
+@media screen and (max-width: 479px) {
+  .label-checkbox {
+    line-height: 12px;
+  }
+}
 
 .form-checkbox__icon {
   display: inline-block;
@@ -1060,6 +1081,13 @@ textarea:focus {
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
   fill: currentColor;
+}
+@media screen and (max-width: 479px) {
+  .form-checkbox__icon {
+    width: 12px;
+    height: 11px;
+    margin-right: 1px;
+  }
 }
 
 .form-checkbox:checked + .form-checkbox__icon {
@@ -1093,6 +1121,14 @@ textarea:focus {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 480px) and (max-width: 479px) {
+  .form-text__policy {
+    font-size: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .form-accept__policy {
   margin-left: 2px;
@@ -1100,7 +1136,11 @@ textarea:focus {
 }
 @media screen and (max-width: 479px) {
   .form-accept__policy {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
