@@ -613,7 +613,6 @@ img {
 @media screen and (max-width: 767px) {
   .subscribe-input {
     margin-bottom: 20px;
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
