@@ -34,6 +34,7 @@
 
 .company-section__list {
   height: 92px;
+  width: calc((100% - 30px) / 2);
 
   @media screen and(max-width: $mobile) {
     align-content: center;
@@ -50,7 +51,7 @@
 }
 
 .company-section__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: center;

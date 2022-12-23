@@ -150,7 +150,6 @@ img {
 }
 @media screen and (max-width: 768px) {
   .main-title {
-    width: 360px;
     margin-top: 0;
     font-size: 26px;
     line-height: 1.6;
@@ -596,7 +595,7 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 16px;
   padding-right: 0;
@@ -613,6 +612,12 @@ img {
     width: 450px;
   }
 }
+@media screen and (max-width: 479px) {
+  .subscribe-input {
+    width: 100%;
+  }
+}
+
 .subscribe-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1060,7 +1065,6 @@ textarea:focus {
 
 @media screen and (max-width: 480px) {
   .benefits-list {
-    width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -1204,6 +1208,7 @@ textarea:focus {
 
 .company-section__list {
   height: 92px;
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (max-width: 480px) {
   .company-section__list {
@@ -1224,7 +1229,7 @@ textarea:focus {
 }
 
 .company-section__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1637,6 +1642,11 @@ textarea:focus {
     width: 200px;
   }
 }
+@media screen and (max-width: 479px) {
+  .nav_button {
+    margin-top: 20px;
+  }
+}
 
 .nav-button__title {
   font-family: "Roboto";
@@ -1766,6 +1776,11 @@ textarea:focus {
   letter-spacing: 0.02em;
   color: var(--background-color);
 }
+@media screen and (max-width: 479px) {
+  .tel-mobile {
+    font-size: 30px;
+  }
+}
 
 .tel-menu__mobile {
   margin-bottom: 32px;
@@ -1780,21 +1795,35 @@ textarea:focus {
   color: var(--paragraf-color);
 }
 
-.nav-mobile__list--social {
-  text-decoration: none;
-  margin-top: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+@media screen and (max-width: 767px) {
+  .nav-mobile__list--social {
+    text-decoration: none;
+    margin-top: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .nav-mobile__list--social {
+    gap: 0;
+  }
 }
 
-.nav-mobile__link-social {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--background-color);
+@media screen and (max-width: 767px) {
+  .nav-mobile__link-social {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--background-color);
+  }
+}
+@media screen and (max-width: 479px) {
+  .nav-mobile__link-social {
+    font-size: 13px;
+  }
 }
 
 .line-mobile__menu {
@@ -1810,6 +1839,10 @@ textarea:focus {
 .mobile-contakt {
   position: absolute;
   bottom: 25px;
+}
+
+.mobile-contakt__list {
+  width: 100%;
 }
 
 .car-studio {
@@ -1848,8 +1881,6 @@ textarea:focus {
 .link-projects-box {
   display: block;
   position: relative;
-  width: 370px;
-  border: 1px solid var(--border-proects);
   text-decoration: none;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1866,12 +1897,6 @@ textarea:focus {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .link-projects-box {
-    width: 100%;
-    gap: 30px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .link-projects-box {
     width: 370px;
@@ -1880,7 +1905,6 @@ textarea:focus {
 
 .link-projects-box:hover,
 .link-projects-box:focus {
-  border: 1px solid #eeeeee;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1903,8 +1927,15 @@ textarea:focus {
   }
 }
 @media screen and (min-width: 768px) {
-  .ul-projects-list {
-    gap: 15px;
+  .projects-box {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-box {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1924,6 +1955,14 @@ textarea:focus {
 
 .projects-paragraph__title {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199) {
+  .title-tab {
+    padding-bottom: 55px;
+  }
 }
 
 .overlay-tekhno {
@@ -2031,7 +2070,6 @@ textarea:focus {
 }
 @media screen and (max-width: 767px) {
   .team-section__item {
-    width: 450px;
     margin-bottom: 30px;
   }
 }
