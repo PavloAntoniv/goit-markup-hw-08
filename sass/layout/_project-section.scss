@@ -89,7 +89,7 @@
 }
 
 .title-tab {
-  @media screen and(min-width:$tablet) and(max-width:1199) {
+  @media screen and(min-width:$tablet) and(min-width:$tablet) {
     padding-bottom: 55px;
   }
 }
