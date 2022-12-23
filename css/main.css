@@ -616,6 +616,12 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-input {
     display: -webkit-inline-box;
