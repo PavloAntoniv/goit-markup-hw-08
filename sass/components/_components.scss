@@ -58,6 +58,14 @@
     font-size: 26px;
     line-height: 1.6;
   }
+
+  @media screen and(min-width:$tablet) {
+    margin-top: 0;
+    font-size: 26px;
+    line-height: 1.6;
+    padding-right: 131px;
+    padding-left: 137px;
+  }
 }
 
 .main-section {

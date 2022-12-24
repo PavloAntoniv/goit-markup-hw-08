@@ -249,7 +249,7 @@
 
 .subscribe-input {
   display: inline-flex;
-  width: 100%;
+  width: 300px;
   height: 50px;
   padding: 16px;
   padding-right: 0;
@@ -259,12 +259,12 @@
   border-radius: 4px;
   background-color: var(--background-title-color);
 
-  @media screen and(max-width:479px) {
-    width: 100%;
-  }
-
   @media screen and(max-width: 767px) {
     margin-bottom: 20px;
+    width: 450px;
+  }
+  @media screen and(max-width:479px) {
+    width: 300px;
   }
 
   @media screen and(min-width:$tablet) {
