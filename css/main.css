@@ -758,7 +758,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .backdrop {
-    min-width: 450px;
+    min-width: 95%;
     overflow-y: scroll;
     margin: 0 auto;
   }
@@ -793,7 +793,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .modal {
-    width: 450px;
+    width: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -803,7 +803,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -833,11 +833,6 @@ img {
   -webkit-transition-timing-function: scale(0.4, 0, 0.2, 1);
           transition-timing-function: scale(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 479px) {
-  .modal-close {
-    right: 160px;
-  }
-}
 
 .modal-close:hover {
   color: var(--background-color);
@@ -866,7 +861,7 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   textarea {
-    width: 200px;
+    width: 100%;
   }
 }
 
@@ -878,13 +873,12 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .form-modal {
-    width: 450px;
+    width: 95%;
   }
 }
 @media screen and (max-width: 479px) {
   .form-modal {
-    padding-left: 20px;
-    padding-bottom: 80px;
+    width: 95%;
   }
 }
 
@@ -964,7 +958,7 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   .form-input__name {
-    width: 200px;
+    width: 100%;
   }
 }
 

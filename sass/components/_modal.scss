@@ -10,7 +10,7 @@
   transition-timing-function: ease;
 
   @media screen and(max-width:767px) {
-    min-width: 450px;
+    min-width: 95%;
     overflow-y: scroll;
     margin: 0 auto;
   }
@@ -41,7 +41,7 @@
   border-radius: 4px;
 
   @media screen and(max-width:$mobile) {
-    width: 450px;
+    width: 95%;
   }
 
   @media screen and(min-width:$descktop) {
@@ -49,7 +49,7 @@
   }
 
   @media screen and(max-width:479px) {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -69,10 +69,6 @@
   transition-property: var(--background-color);
   transition-duration: 250ms;
   transition-timing-function: scale(0.4, 0, 0.2, 1);
-
-  @media screen and(max-width:479px) {
-    right: 160px;
-  }
 }
 
 .modal-close:hover {
@@ -98,7 +94,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and(max-width:479px) {
-    width: 200px;
+    width: 100%;
   }
 }
 
@@ -109,11 +105,10 @@ textarea {
   padding: 40px;
 
   @media screen and(max-width:$mobile) {
-    width: 450px;
+    width: 95%;
   }
   @media screen and(max-width:479px) {
-    padding-left: 20px;
-    padding-bottom: 80px;
+    width: 95%;
   }
 }
 
@@ -179,7 +174,7 @@ textarea {
     outline: none;
   }
   @media screen and(max-width:479px) {
-    width: 200px;
+    width: 100%;
   }
 }
 
