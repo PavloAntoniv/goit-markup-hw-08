@@ -131,7 +131,7 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main-title {
     width: 100%;
     height: 84px;
@@ -793,11 +793,6 @@ img {
 @media screen and (max-width: 480px) {
   .modal {
     width: 95%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-height: 609px;
   }
 }
 @media screen and (max-width: 479px) {
