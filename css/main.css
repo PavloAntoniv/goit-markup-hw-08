@@ -1729,6 +1729,11 @@ textarea:focus {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-link {
+    font-size: 16px;
+  }
+}
 
 .contact-link:hover,
 .contact-link:focus {
@@ -1946,6 +1951,7 @@ textarea:focus {
 @media screen and (max-width: 479px) {
   .nav-mobile__link-social {
     font-size: 13px;
+    margin-right: 3px;
   }
 }
 
