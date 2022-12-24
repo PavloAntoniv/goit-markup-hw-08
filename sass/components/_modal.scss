@@ -13,11 +13,13 @@
     min-width: 95%;
     overflow-y: scroll;
     margin: 0 auto;
+    z-index: 4;
   }
 
   @media screen and(max-width:$descktop) {
     min-height: 609px;
     overflow-y: scroll;
+    z-index: 5;
   }
 }
 
@@ -39,7 +41,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and(max-width:$mobile) {
+  @media screen and(max-width:767px) {
     width: 95%;
   }
 
@@ -102,7 +104,7 @@ textarea {
   border-radius: 4px;
   padding: 40px;
 
-  @media screen and(max-width:$mobile) {
+  @media screen and(max-width:767px) {
     width: 100%;
   }
 }
